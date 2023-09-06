@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap">
+    <title>Home - Área do Intercambista</title>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row home-container vh-100">
+            <div class="col home-bar">
+                <div class="row">
+                    <div class="col home-logo mt-4">
+                        <a href="./home.html">
+                            <img src="../assets/images/logo-96x96.png" alt="Vital" width="60">
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col home-menu-itens">
+                        <div class="row">
+                            <div class="col ml-3 home-icon home-icon-home">
+                                <a href="./home.html">
+                                    <i class="bi bi-house h2" alt="Início" title="Início"></i>
+                                </a>
+                            </div>
+                            <div class="col ml-3 mt-4 home-icon home-icon-finance">
+                                <a href="./finance.html">
+                                    <i class="bi bi-cash-coin h2" alt="Financeiro" title="Financeiro"></i>
+                                </a>
+                            </div>
+                            <div class="col home-icon ml-3 mt-4 home-icon-sac">
+                                <a href="./sac.html">
+                                    <i class="bi bi-telephone h2" alt="SAC" title="SAC"></i>
+                                </a>
+                            </div>
+                            <div class="col home-icon ml-3 mt-4 home-icon-documents">
+                                <a href="./documents.html">
+                                    <i class="bi bi-file-earmark-text h2" alt="Documentos" title="Documentos"></i>
+                                </a>
+                            </div>
+                            <div class="col home-icon ml-3 mt-4 home-icon-messages">
+                                <a href="./messages.html">
+                                    <i class="bi bi-envelope h2" alt="Atendimento" title="Atendimento"></i>
+                                </a>
+                            </div>
+                            <div class="col home-icon ml-3 mt-4 home-icon-profile">
+                                <a href="./profile.html">
+                                    <i class="bi bi-person h2" alt="Perfil" title="Perfil"></i>
+                                </a>
+                            </div>
+                            <div class="col home-icon ml-3 mt-4 home-icon-profile">
+                                <a href="./login.html">
+                                    <i class="bi bi-power h2" alt="Sair" title="Sair"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col home-dashboard">
+                <div class="row">
+                    <div class="col vh-100">
+                        <div class="row">
+                            <div class="col title-box-pages p-5">
+                                <h3>ATENDIMENTO - Visto - 04/09/2023</h3>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col mb-4 ml-5 mt-4">
+                                <div class="row">
+                                    <div class="col p-5 message-box-answer">
+                                        <div class="row">
+                                            <div class="col profile-input">
+                                                <div class="row">
+                                                    <div class="col profile-label-phone">Categoria</div>
+                                                </div>
+                                                <div class="row mt-2">
+                                                    <div class="col profile-input-phone">
+                                                        <select id="sac-category" name="sac-category" class="form-control input">
+                                                            <option selected>-- Selecione --</option>
+                                                            <option value="1">Acomodação</option>
+                                                            <option value="2">Visto</option>
+                                                            <option value="3">Passaporte</option>
+                                                            <option value="4">Seguro</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-4">
+                                            <div class="col profile-input">
+                                                <div class="row">
+                                                    <div class="col profile-label-email">Descrição</div>
+                                                </div>
+                                                <div class="row mt-2">
+                                                    <div class="col profile-input-email">
+                                                        <textarea id="sac-desc" name="sac-desc" class="form-control input"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col mt-4 box-document-file">
+                                                <div class="row">
+                                                    <div class="col document-label-file">Arquivo</div>
+                                                </div>
+                                                <div class="row mt-2">
+                                                    <div class="col document-input-file">
+                                                        <input id="file" name="file" type="file">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-5 pl-3">
+                                            <div class="col-auto message-bt-send rounded text-center" id="bt-send-message">
+                                                ENVIAR
+                                            </div>
+                                            <div class="col-auto ml-3 pt-2 rounded text-center" id="bt-end-message">
+                                                ENCERRAR ATENDIMENTO
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col mt-3 p-5 message-box-rate">
+                                        <div class="row">
+                                            <div class="col profile-input">
+                                                <div class="row">
+                                                    <div class="col profile-label-phone"><h5>Avalie nosso Atendimento</h5></div>
+                                                </div>
+                                                <div class="row mt-2">
+                                                    <div class="col profile-input-phone">
+                                                        <div class="btn-group btn-group-toggle mt-3">
+                                                            <label class="btn btn-danger btn-lg">
+                                                              <input type="radio" name="options" id="option1" autocomplete="off"> 1
+                                                            </label>
+                                                            <label class="btn btn-danger btn-lg">
+                                                              <input type="radio" name="options" id="option2" autocomplete="off"> 2
+                                                            </label>
+                                                            <label class="btn btn-danger btn-lg">
+                                                              <input type="radio" name="options" id="option3" autocomplete="off"> 3
+                                                            </label>
+                                                            <label class="btn btn-danger btn-lg">
+                                                                <input type="radio" name="options" id="option3" autocomplete="off"> 4
+                                                            </label>
+                                                            <label class="btn btn-danger btn-lg">
+                                                                <input type="radio" name="options" id="option3" autocomplete="off"> 5
+                                                            </label>
+                                                            <label class="btn btn-danger btn-lg">
+                                                                <input type="radio" name="options" id="option3" autocomplete="off"> 6
+                                                            </label>
+                                                            <label class="btn btn-warning btn-lg">
+                                                                <input type="radio" name="options" id="option3" autocomplete="off"> 7
+                                                            </label>
+                                                            <label class="btn btn-warning btn-lg">
+                                                                <input type="radio" name="options" id="option3" autocomplete="off"> 8
+                                                            </label>
+                                                            <label class="btn btn-success btn-lg">
+                                                                <input type="radio" name="options" id="option3" autocomplete="off"> 9
+                                                            </label>
+                                                            <label class="btn btn-success btn-lg">
+                                                                <input type="radio" name="options" id="option3" autocomplete="off"> 10
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-4 ml-5 mt-4 mr-5 message-open-list-texts p-5">
+                                <div class="row">
+                                    <div class="col auto m-4 p-4 message-open-text-student">
+                                        <div class="row m-1 p-1">
+                                            Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
+                                        </div>
+                                        <div class="row mt-4">
+                                            <div class="col"></div>
+                                            <div class="col-auto border-top pt-2 text-right blockquote-footer">João Pedro <br> 04/09/2023</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col auto m-4 p-4 message-open-text-user">
+                                        <div class="row m-1 p-1">
+                                            Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.
+                                        </div>
+                                        <div class="row mt-4">
+                                            <div class="col"></div>
+                                            <div class="col-auto border-top pt-2 text-right blockquote-footer">Renata Duarte <br> 05/09/2023</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html> 

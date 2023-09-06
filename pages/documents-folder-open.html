@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap">
+    <title>Home - Área do Intercambista</title>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row home-container vh-100">
+            <div class="col home-bar">
+                <div class="row">
+                    <div class="col home-logo mt-4">
+                        <a href="./home.html">
+                            <img src="../assets/images/logo-96x96.png" alt="Vital" width="60">
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col home-menu-itens">
+                        <div class="row">
+                            <div class="col ml-3 home-icon home-icon-home">
+                                <a href="./home.html">
+                                    <i class="bi bi-house h2" alt="Início" title="Início"></i>
+                                </a>
+                            </div>
+                            <div class="col ml-3 mt-4 home-icon home-icon-finance">
+                                <a href="./finance.html">
+                                    <i class="bi bi-cash-coin h2" alt="Financeiro" title="Financeiro"></i>
+                                </a>
+                            </div>
+                            <div class="col home-icon ml-3 mt-4 home-icon-sac">
+                                <a href="./sac.html">
+                                    <i class="bi bi-telephone h2" alt="SAC" title="SAC"></i>
+                                </a>
+                            </div>
+                            <div class="col home-icon ml-3 mt-4 home-icon-documents">
+                                <a href="./documents.html">
+                                    <i class="bi bi-file-earmark-text h2" alt="Documentos" title="Documentos"></i>
+                                </a>
+                            </div>
+                            <div class="col home-icon ml-3 mt-4 home-icon-messages">
+                                <a href="./messages.html">
+                                    <i class="bi bi-envelope h2" alt="Atendimento" title="Atendimento"></i>
+                                </a>
+                            </div>
+                            <div class="col home-icon ml-3 mt-4 home-icon-profile">
+                                <a href="./profile.html">
+                                    <i class="bi bi-person h2" alt="Perfil" title="Perfil"></i>
+                                </a>
+                            </div>
+                            <div class="col home-icon ml-3 mt-4 home-icon-profile">
+                                <a href="./login.html">
+                                    <i class="bi bi-power h2" alt="Sair" title="Sair"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col home-dashboard">
+                <div class="row">
+                    <div class="col vh-100">
+                        <div class="row">
+                            <div class="col title-box-pages p-5">
+                                <h3>DOCUMENTOS - VISTO</h3>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row">
+                           <div class="col documents-folder-list p-5">
+                                <div class="row">
+                                    <div class="col-auto ml-3 pt-2 mb-3 box-icon-download" style="height: 140px;" onclick="openFileInfo('document-1')">
+                                        <i class="bi bi-file-earmark-arrow-down h1 icon-download"></i> 
+                                        <div class="col auto  pt-5">Cópia de Visto</div>
+                                    </div>
+                                    <div class="col-auto ml-3 pt-2 mb-3 box-icon-download" style="height: 140px;" onclick="openFileInfo('document-2')">
+                                        <i class="bi bi-file-earmark-arrow-down h1 icon-download"></i> 
+                                        <div class="col auto  pt-5">Formulário de visto</div>
+                                    </div>
+                                    <div class="col-auto ml-3 pt-2 mb-3 box-icon-download" style="height: 140px;" onclick="openFileInfo('document-3')">
+                                        <i class="bi bi-file-earmark-arrow-down h1 icon-download"></i> 
+                                        <div class="col auto  pt-5">Guia de ajuda</div>
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="row files-open d-none" id="document-1">
+                            <div class="col m-4">
+                                <div class="row auto mt-4">
+                                    <h4 class="border-bottom ml-4 mr-2">Cópia de Visto</h4>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 ml-4 mt-3 p-5 documents-box-inputs">
+                                        <div class="row">
+                                            <div class="col profile-input">
+                                                <div class="row">
+                                                    <div class="col-auto pl-0 profile-label-phone border-bottom">Baixar Arquivo</div>
+                                                </div>
+                                                <div class="row mt-3">
+                                                    <i class="bi bi-file-earmark-arrow-down h1 icons"></i> 
+                                                    <div class="col auto pt-3">Cópia de Visto - 04/09/2023</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col profile-input mt-4">
+                                                <div class="row">
+                                                    <div class="col-auto pl-0 profile-label-phone border-bottom">Status do Arquivo - <span class="badge badge-warning">Aguardando aprovação</span></div>
+                                                </div>
+                                                <div class="row mt-4">
+                                                    <div class="col profile-input">
+                                                        <div class="row">
+                                                            <div class="col ml-0 pl-0 profile-label-email">Observação</div>
+                                                        </div>
+                                                        <div class="row mt-2">
+                                                            <div class="col ml-0 pl-0  profile-input-email">
+                                                                <textarea id="document-folder-validation" name="document-folder-validation" class="form-control input"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-3">
+                                                    <button type="button" class="btn btn-outline-success mr-3">Aprovar</button>
+                                                    <button type="button" class="btn btn-outline-danger">Reprovar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+
+                        <div class="row files-open d-none" id="document-2">
+                            <div class="col m-4">
+                                <div class="row auto mt-4">
+                                    <h4 class="border-bottom ml-4 mr-2">Formulário de Visto</h4>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 ml-4 mt-3 p-5 documents-box-inputs">
+                                        <div class="row">
+                                            <div class="col profile-input">
+                                                <div class="row">
+                                                    <div class="col-auto pl-0 profile-label-phone border-bottom">Baixar Arquivo</div>
+                                                </div>
+                                                <div class="row mt-3">
+                                                    <i class="bi bi-file-earmark-arrow-down h1 icons"></i> 
+                                                    <div class="col auto pt-3">Formulário de Visto - 04/09/2023</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col profile-input mt-4">
+                                                <div class="row">
+                                                    <div class="col-auto pl-0 profile-label-phone border-bottom">Status do Arquivo - <span class="badge badge-warning">Aguardando aprovação</span></div>
+                                                </div>
+                                                <div class="row mt-4">
+                                                    <div class="col profile-input">
+                                                        <div class="row">
+                                                            <div class="col ml-0 pl-0 profile-label-email">Observação</div>
+                                                        </div>
+                                                        <div class="row mt-2">
+                                                            <div class="col ml-0 pl-0  profile-input-email">
+                                                                <textarea id="document-folder-validation" name="document-folder-validation" class="form-control input"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-3">
+                                                    <button type="button" class="btn btn-outline-success mr-3">Aprovar</button>
+                                                    <button type="button" class="btn btn-outline-danger">Reprovar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+
+                        <div class="row files-open d-none" id="document-3">
+                            <div class="col m-4">
+                                <div class="row auto mt-4">
+                                    <h4 class="border-bottom ml-4 mr-2">Guia de Ajuda</h4>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6 ml-4 mt-3 p-5 documents-box-inputs">
+                                        <div class="row">
+                                            <div class="col profile-input">
+                                                <div class="row">
+                                                    <div class="col-auto pl-0 profile-label-phone border-bottom">Baixar Arquivo</div>
+                                                </div>
+                                                <div class="row mt-3">
+                                                    <i class="bi bi-file-earmark-arrow-down h1 icons"></i> 
+                                                    <div class="col auto pt-3">Guia de Ajuda - 04/09/2023</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col profile-input mt-4">
+                                                <div class="row">
+                                                    <div class="col-auto pl-0 profile-label-phone border-bottom">Status do Arquivo - <span class="badge badge-warning">Aguardando aprovação</span></div>
+                                                </div>
+                                                <div class="row mt-4">
+                                                    <div class="col profile-input">
+                                                        <div class="row">
+                                                            <div class="col ml-0 pl-0 profile-label-email">Observação</div>
+                                                        </div>
+                                                        <div class="row mt-2">
+                                                            <div class="col ml-0 pl-0  profile-input-email">
+                                                                <textarea id="document-folder-validation" name="document-folder-validation" class="form-control input"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-3">
+                                                    <button type="button" class="btn btn-outline-success mr-3">Aprovar</button>
+                                                    <button type="button" class="btn btn-outline-danger">Reprovar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        function openFileInfo(iFileId){
+            var oFileOpen = document.getElementsByClassName('files-open');
+            for (let index = 0; index < oFileOpen.length; index++) {
+                oFileOpen[index].classList.remove("d-block");                
+                oFileOpen[index].classList.add("d-none");                
+            }
+            document.getElementById(iFileId).classList.add("d-block");                
+        }
+
+    </script>
+
+</body>
+</html> 
